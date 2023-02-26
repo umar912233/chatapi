@@ -40,7 +40,7 @@ connection.connect(function(err) {
 
 let io = require('socket.io')(server,
   {
-    transports: ['websocket'],
+    transports: ['polling', 'websocket'],
     secure: true,
     cors: {
       origin: "*"
